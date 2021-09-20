@@ -9,3 +9,4 @@ phpunit.xml
 /data/**
 # temp
 /cron/result.txt
+composer.lock
