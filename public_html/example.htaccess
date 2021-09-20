@@ -5,6 +5,8 @@ RewriteRule ^api/ api.php
   deny from all 
 </Files>
 
+RewriteRule ^widget/(.*)/?$ widget.php?channelid=$1 [L,QSA]
+
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php
